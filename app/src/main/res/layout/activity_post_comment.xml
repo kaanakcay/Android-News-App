@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostCommentActivity">
+
+    <EditText
+        android:id="@+id/postTxtName"
+        android:layout_width="365dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/postTxt"
+        android:layout_width="366dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Your comments"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postTxtName" />
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="366dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:text="POST COMMENT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postTxt" />
+
+    <TextView
+        android:id="@+id/textViewPost"
+        android:layout_width="350dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

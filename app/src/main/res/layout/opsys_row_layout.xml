@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/imgList"
+        android:layout_width="298dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtListName"
+        android:layout_width="393dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="68dp"
+        android:text="Android"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgList" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:background="#D1D0D0"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="94dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgList" />
+</androidx.constraintlayout.widget.ConstraintLayout>
